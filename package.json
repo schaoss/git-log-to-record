@@ -1,0 +1,29 @@
+{
+  "name": "git-log-to-md",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "export NODE_ENV=development && nodemon main.js",
+    "start": "export NODE_ENV=production && node main.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "consola": "^2.15.3",
+    "dayjs": "^1.10.6",
+    "dotenv": "^10.0.0",
+    "gitlog": "^4.0.4"
+  },
+  "devDependencies": {
+    "git-cz": "^4.7.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/git-cz"
+    }
+  }
+}
